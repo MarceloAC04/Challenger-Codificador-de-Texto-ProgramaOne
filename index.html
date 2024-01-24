@@ -8,17 +8,38 @@
 </head>
 <body>
     <header>
+        <nav>
+            <a href="index.html" title="home">
+                <img src="./css/img/logo-alura.svg" alt="logo-alura">
+            </a>
+        </nav>
     </header>
 
-    <main>
+    <main class="container-grid">
         <section>
+            <div class="input-text">
+                <textarea class="text" id="input" placeholder="Digite seu texto" cols="60" rows="10"></textarea>
+            </div>
+
+            <div class="information">
+                <img src="./css/img/exclamancao.svg" alt="Ponto de exclamancao">
+                <p class="warning">Sem letras maiusculas e caracteres especiais</p>
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="btn-codificar">Codificar</button>
+                <button type="button" class="btn-decodificar">Decodificar</button>
+            </div>
         </section>
 
-        <section>
+        <section class="text-result">
+            <textarea class="result" id="show-result" cols="20" rows="11" placeholder="" readonly></textarea>
+            <button type="button" class="btn-invisible btn-copy">Copiar</button>
         </section>
     </main>
     
     <footer>
+        <p>&#169; Desenvolvido por Marcelo</p>
     </footer>
 
     <script src="./Js/Decodificador.js"></script>
