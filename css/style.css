@@ -79,12 +79,12 @@
     opacity: 80%;
 }
 
-.container-grid .btn-codificar {
+.container-grid .btnCodificar {
     background-color: var(--color-red);
     color: white;
 }
 
-.container-grid .btn-decodificar {
+.container-grid .btnDecodificar {
     margin-left: 30px;
     background-color: var(--color-white);
     color: var(--color-red);
@@ -111,14 +111,18 @@
   border-color: transparent;
 }
 
-.container-grid .text-result .result:placeholder-shown {
+.result:placeholder-shown {
   background-image: url(./img/resultado-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.container-grid .text-result .result:not(:placeholder-shown) {
+.result:not(:placeholder-shown) {
   background-color: var(--color-red);
+}
+
+.btn-invisible {
+  display: none;
 }
 
 .container-grid .text-result .btn-copy {
