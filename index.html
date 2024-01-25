@@ -27,14 +27,14 @@
             </div>
 
             <div class="buttons">
-                <button type="submit" onclick="escreveCodificado()" class="btnCodificar">Codificar</button>
-                <button type="submit" onclick="escreveDecodificado()" class="btnDecodificar">Decodificar</button>
+                <button type="submit" onclick="escreverCodificado()" class="btnCodificar">Codificar</button>
+                <button type="submit" onclick="escreverDecodificado()" class="btnDecodificar">Decodificar</button>
             </div>
         </section>
 
         <section class="text-result">
             <textarea class="result" id="show-result" cols="20" rows="11" placeholder="" readonly></textarea>
-            <button type="button" class="btn-invisible btn-copy">Copiar</button>
+            <button type="button" onclick="copy()" class="btn-invisible btn-copy">Copiar</button>
         </section>
     </main>
     

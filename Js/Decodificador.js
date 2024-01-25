@@ -1,6 +1,21 @@
+const resultado = document.getElementById("show-result")
+const btnCopiar = document.querySelector(".btn-copy");
+
+function validarTexto(texto) {
+    if (texto.length == 0) {
+        alert('Digite algum texto!')
+        return false;
+    } else if(/[A-Z-À-Ú-à-ú]/.test(texto)) {
+        alert('Apenaas letras minúsculas e sem acento!')
+        return false;
+    }
+    return true;
+}
+
+
 function codificadorTexto() {
-    const text = document.getElementById("input");
-    const character = text.value.split("")
+    const text = document.getElementById("input").value;
+    const character = text.split("")
 
     character.forEach((item, i) => {
         if(item == "a") {
@@ -22,11 +37,11 @@ function codificadorTexto() {
     return character.join("");
 }
 
-function escreveCodificado() {
-    const resultado = document.getElementById("show-result")
-    const btnCopiar = document.querySelector(".btn-copy");
+function escreverCodificado() {
+    if (!validarTexto(document.getElementById("input").value)) {
+        return;
+    }
     btnCopiar.classList.remove("btn-invisible");
-    
     resultado.textContent = codificadorTexto();
 }
 
@@ -39,14 +54,23 @@ function decodificadorTexto() {
             text = text.replaceAll(code[i][1], code[i][0]);
         }
     }
-    console.log(text);
     return text;
 }
 
-function escreveDecodificado() {
-    const resultado = document.getElementById("show-result")
-    const btnCopiar = document.querySelector(".btn-copy");
+function escreverDecodificado() {
+    if (!validarTexto(document.getElementById("input").value)) {
+        return;
+    }
     btnCopiar.classList.remove("btn-invisible");
-    
     resultado.textContent = decodificadorTexto();
+}
+
+function copy() {
+    inputTexto = document.getElementById("input");
+    inputTexto.select();
+    document.execCommand("copy");
+    inputTexto.value = "";
+    inputTexto.focus();
+    resultado.textContent = "";
+    btnCopiar.classList.add("btn-invisible");
 }
