@@ -20,7 +20,7 @@
 }
 
 body {
-  font-family: 'Poppins-Regular', 'Courier New', Courier, monospace;
+  font-family: Poppins-Regular;
   background-color: var(--color-white);
 }
 
@@ -33,23 +33,33 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-left: 25px;
 }
 
 textarea {
   resize: none;
 }
 
+.container-grid .input-text .text::placeholder {
+  color: var(--color-red);
+  font-family: Poppins-Regular;
+  font-size: 32px;
+}
+
 .container-grid .input-text .text {
   background-color: transparent;
-  border-color: var(--color-red);
+  border-color: transparent;
   margin: 25px 0;
   border-radius: 30px;
   padding: 5px;
+  color: var(--color-red);
+  font-family: Poppins-Regular;
+  font-size: 32px;
 }
 
 .container-grid .information {
   display: flex;
-  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 .container-grid .information .warning {
@@ -62,13 +72,15 @@ textarea {
 .container-grid .buttons {
   display: flex;
   flex-direction: row;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 
 button {
-  width: 175px;
+  width: 375px;
   height: 60px;
   border: 1px solid var(--color-red);
+  font-weight: bold;
+  font-family: Poppins-Regular;
   border-radius: 25px;
   cursor: pointer;
   box-shadow: 3px 5px 12px var(--color-black);
@@ -98,7 +110,7 @@ button:hover {
   background-color: var(--color-red);
   margin: 20px 0;
   border-radius: 30px;
-  padding: 3rem;
+  padding: 1rem;
   height: 40rem;
   align-items: center;
   box-shadow: 8px 14px 30px var(--color-black);
@@ -106,9 +118,12 @@ button:hover {
 
 .container-grid .text-result .result {
   position: relative;
-  padding: 2rem;
+  padding: 1rem;
   background-color: transparent;
   border-color: transparent;
+  color: var(--color-white);
+  font-family: Poppins-Regular;
+  font-size: 24px;
 }
 
 .result:placeholder-shown {
@@ -121,6 +136,7 @@ button:hover {
   background-color: var(--color-red);
 }
 
+
 .btn-invisible {
   display: none;
 }
@@ -130,16 +146,44 @@ button:hover {
   color: var(--color-white);
   border-color: var(--color-dark-blue);
   margin-left: 15px;
+  width: 175px;
 }
 
 footer {
-  background-color: var(--color-dark-blue);
+  background-color: var(--color-red);
+  text-align: center;
 }
 
-footer p {
+.social-midia * {
+  vertical-align: middle;
+}
+
+.social-midia p {
   color: var(--color-white);
-  text-align: center;
+  margin-bottom: 15px;
+}
+
+.social-midia a {
+  text-decoration: none;
+  font-family: Poppins-Regular;
+  margin: 5px 15px;
+  color: #fff;
+}
+
+.social-midia a:hover {
+  transition: 0.5s;
+  opacity: 70%;
+}
+
+.social-midia a img {
+  height: 45px;
+  width: 45px;
+}
+
+.credit p {
+  color: var(--color-white);
   padding: 1px;
+  margin-top: 15px;
 }
 
 /* Mobile */
@@ -158,6 +202,7 @@ footer p {
     margin-left: 15px;
     max-width: 80%;
     height: 20%;
+    font-size: 24px;
   }
 
   .container-grid .information {
@@ -177,7 +222,7 @@ footer p {
 
   button {
     height: 50px;
-    font-weight: bold;
+    width: 175px;
   }
 
   .container-grid .btnCodificar {
@@ -201,6 +246,7 @@ footer p {
     width: 90%;
     height: 30%;
     align-self: center;
+    font-size: 16px;
   }
 
   .container-grid .text-result .btn-copy {
@@ -209,7 +255,30 @@ footer p {
   }
 
   footer {
-    height: 30px;
+    margin: auto;
+  }
+
+  .social-midia {
+    font-size: 14px;
+  }
+
+  .social-midia p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .social-midia a {
+    margin: 5px;
+  }
+
+  .social-midia a img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .credit {
+    font-size: 14px;
+    margin-top: 10px;
   }
 
 }
