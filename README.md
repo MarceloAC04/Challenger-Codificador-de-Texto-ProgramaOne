@@ -1,15 +1,16 @@
 # Challenger-Codificador-de-Texto-ProgramaOne
 
-<h2 align-text="left">💻 Projeto desenvolvido para o programa one<br/> que
-consiste em um codificador e decodificador de 
-textos.</h2>
+<h2 align-text="left">
+ 💻 Projeto desenvolvido para o programa one<br/> que
+    consiste em um codificador e decodificador de 
+    textos.</h2>
 
 <h3 align-text="left">O funcionamento ocorre da seguinte forma:</h2>
-  * A letra "e" é convertida para "enter"
-  * A letra "i" é convertida para "imes"
-  * A letra "a" é convertida para "ai"
-  * A letra "o" é convertida para "ober"
-  * A letra "u" é convertida para "ufat"
+  + A letra "e" é convertida para "enter"
+  + A letra "i" é convertida para "imes"
+  + A letra "a" é convertida para "ai"
+  + A letra "o" é convertida para "ober"
+  + A letra "u" é convertida para "ufat"
 
 <h3 align-text="left">Exemplo:</h2>
    rato" => "raitober"<br/>
@@ -20,7 +21,7 @@ textos.</h2>
 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/></p>
 
 <h3 align-text="left">📎 Link do projeto no GitHub Pages:</h3> 
-   <p>ttps://marceloac04.github.io/Challenger-Codificador-de-Texto-ProgramaOne/</p>
+   <p>https://marceloac04.github.io/Challenger-Codificador-de-Texto-ProgramaOne/</p>
 
 #challengeonedecodificador5<br/>
 #challengeonedecodificador6
