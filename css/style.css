@@ -57,6 +57,10 @@ textarea {
   font-size: 32px;
 }
 
+.text:focus {
+  outline: none !important;
+}
+
 .container-grid .information {
   display: flex;
   margin-bottom: 30px;
@@ -64,7 +68,7 @@ textarea {
 
 .container-grid .information .warning {
   font-family: Poppins-Regular;
-  font-size: 14px;
+  font-size: 16px;
   padding-left: 5px;
   font-weight: bold;
 }
@@ -118,12 +122,11 @@ button:hover {
 
 .container-grid .text-result .result {
   position: relative;
-  padding: 1rem;
   background-color: transparent;
   border-color: transparent;
   color: var(--color-white);
   font-family: Poppins-Regular;
-  font-size: 24px;
+  font-size: 32px;
 }
 
 .result:placeholder-shown {
@@ -279,6 +282,7 @@ footer {
   .credit {
     font-size: 14px;
     margin-top: 10px;
+    font-family: Poppins-Regular;
   }
 
 }
