@@ -20,6 +20,7 @@ Exemplo:
 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/>
 
 📎 Link do projeto no GitHub Pages:
+  https://marceloac04.github.io/Challenger-Codificador-de-Texto-ProgramaOne/
 
 #challengeonedecodificador5
 #challengeonedecodificador6
