@@ -25,7 +25,7 @@
 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/></p>
 
 <h3 align-text="left">📎 Link do projeto no GitHub Pages:</h3> 
-   <p>https://marceloac04.github.io/Challenger-Codificador-de-Texto-ProgramaOne/</p>
+    <p>https://marceloac04.github.io/Challenger-Codificador-de-Texto-ProgramaOne/</p>
 
 #challengeonedecodificador5<br/>
 #challengeonedecodificador6
