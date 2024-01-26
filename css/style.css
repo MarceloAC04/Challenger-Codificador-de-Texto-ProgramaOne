@@ -139,6 +139,10 @@ button:hover {
   background-color: var(--color-red);
 }
 
+.result:focus {
+  outline: none !important;
+}
+
 
 .btn-invisible {
   display: none;
