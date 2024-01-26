@@ -257,7 +257,7 @@ footer {
   }
 
   .result:placeholder-shown {
-    background-image: url(./img/resultado.jpeg);
+    background-image: url(./img/resultado-mobile.png);
   }
 
   .container-grid .text-result .btn-copy {
