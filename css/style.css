@@ -130,7 +130,7 @@ button:hover {
 }
 
 .result:placeholder-shown {
-  background-image: url(./img/resultado.png);
+  background-image: url(./img/resultado.jpeg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -257,7 +257,7 @@ footer {
   }
 
   .result:placeholder-shown {
-    background-image: url(./img/resultado.png);
+    background-image: url(./img/resultado.jpeg);
   }
 
   .container-grid .text-result .btn-copy {
